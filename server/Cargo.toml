@@ -1,0 +1,26 @@
+[package]
+name = "abraserver"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rocket = { version = "0.5.1", features = ["json"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0.117"
+couch_rs = "0.10.1"
+rand = "0.8.5"
+rand_chacha = "0.3.1"
+chrono = "0.4.38"
+argon2 = "0.5.3"
+jsonwebtoken = "9.3.0"
+reqwest = { version = "0.12.5", features = ["json"] }
+regex = "1.5"
+anyhow = "1.0.86"
+a2 = {version = "0.10.0", default_features = false, features = ["tracing", "ring"]}
+
+[dependencies.uuid]
+version = "1.10.0"
+features = [
+    "v4",
+    "fast-rng"
+]
