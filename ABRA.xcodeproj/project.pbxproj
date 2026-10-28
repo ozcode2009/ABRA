@@ -3,29 +3,133 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A20716AE2C23605C008E261C /* MiniViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20716AD2C23605C008E261C /* MiniViews.swift */; };
+		A211EA7A2C055DAC002FF2C6 /* PreviousRunView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A211EA792C055DAC002FF2C6 /* PreviousRunView.swift */; };
+		A21E912D2C3830FB004F4A7B /* GroupCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21E912C2C3830FB004F4A7B /* GroupCoordinator.swift */; };
+		A21E912F2C38BEFA004F4A7B /* GroupListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21E912E2C38BEFA004F4A7B /* GroupListView.swift */; };
+		A21E91312C38BF10004F4A7B /* GroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21E91302C38BF10004F4A7B /* GroupView.swift */; };
+		A21E91332C396B95004F4A7B /* RunChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21E91322C396B94004F4A7B /* RunChartView.swift */; };
+		A2290BB62C57F85A0098CA06 /* PRCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2290BB52C57F8590098CA06 /* PRCalculator.swift */; };
+		A256F93C2C42CDC000841779 /* RoutePlannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A256F93B2C42CDC000841779 /* RoutePlannerView.swift */; };
+		A256F93E2C42F1CF00841779 /* RouteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A256F93D2C42F1CF00841779 /* RouteModel.swift */; };
+		A266A03A2C334FC100A1E93D /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A266A0392C334FC100A1E93D /* SignInView.swift */; };
+		A26857202C09528300A3CD72 /* WeatherStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = A268571F2C09528300A3CD72 /* WeatherStuff.swift */; };
+		A27D12452C25CCD6007F19F6 /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = A27D12442C25CCD6007F19F6 /* BottomSheet */; };
 		A2A4AD482C03C8450072187F /* ABRAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A4AD472C03C8450072187F /* ABRAApp.swift */; };
-		A2A4AD4A2C03C8450072187F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A4AD492C03C8450072187F /* ContentView.swift */; };
+		A2A4AD4A2C03C8450072187F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A4AD492C03C8450072187F /* MainView.swift */; };
 		A2A4AD4C2C03C84A0072187F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2A4AD4B2C03C84A0072187F /* Assets.xcassets */; };
 		A2A4AD4F2C03C84A0072187F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2A4AD4E2C03C84A0072187F /* Preview Assets.xcassets */; };
+		A2A4AD562C03C9180072187F /* RunCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A4AD552C03C9180072187F /* RunCoordinator.swift */; };
+		A2B613F22D21BD86009386C8 /* WorkoutModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B613F12D21BD85009386C8 /* WorkoutModel.swift */; };
+		A2BD5FEE2C7688E600E8D910 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2BD5FD12C76178A00E8D910 /* WidgetKit.framework */; };
+		A2BD5FEF2C7688E600E8D910 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2BD5FD32C76178A00E8D910 /* SwiftUI.framework */; };
+		A2BD5FFC2C7688EA00E8D910 /* ABRALiveActivityExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A2BD5FED2C7688E600E8D910 /* ABRALiveActivityExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A2D9F5F82C051E960060B58E /* RunModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D9F5F72C051E960060B58E /* RunModel.swift */; };
+		A2DE8E2F2C34E01700A03369 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DE8E2E2C34E01700A03369 /* KeychainManager.swift */; };
+		A2EE42F42C054C9F00C425A0 /* RunListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EE42F32C054C9F00C425A0 /* RunListView.swift */; };
+		A2EE42F62C054CAD00C425A0 /* StartRunView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EE42F52C054CAD00C425A0 /* StartRunView.swift */; };
+		A2EE42F82C0556E100C425A0 /* RunningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EE42F72C0556E100C425A0 /* RunningView.swift */; };
+		A2F058762C06C32300B791BC /* HelveticaNeueBlack.otf in Resources */ = {isa = PBXBuildFile; fileRef = A2F058752C06C32300B791BC /* HelveticaNeueBlack.otf */; };
+		A2F413102C29EDEE00AB9DC7 /* CommunicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F4130F2C29EDEE00AB9DC7 /* CommunicationCoordinator.swift */; };
+		A2FDB0D02C6E835E005EC055 /* TrackPlanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FDB0CF2C6E835E005EC055 /* TrackPlanner.swift */; };
+		A2FE3FD72C4EC4DE00A22393 /* MusicCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FE3FD62C4EC4DE00A22393 /* MusicCoordinator.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A2BD5FFA2C7688EA00E8D910 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2A4AD3C2C03C8450072187F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2BD5FEC2C7688E600E8D910;
+			remoteInfo = ABRALiveActivityExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A2BD5FE82C76179200E8D910 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A2BD5FFC2C7688EA00E8D910 /* ABRALiveActivityExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		A20716AD2C23605C008E261C /* MiniViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniViews.swift; sourceTree = "<group>"; };
+		A211EA792C055DAC002FF2C6 /* PreviousRunView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousRunView.swift; sourceTree = "<group>"; };
+		A21E912C2C3830FB004F4A7B /* GroupCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCoordinator.swift; sourceTree = "<group>"; };
+		A21E912E2C38BEFA004F4A7B /* GroupListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupListView.swift; sourceTree = "<group>"; };
+		A21E91302C38BF10004F4A7B /* GroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupView.swift; sourceTree = "<group>"; };
+		A21E91322C396B94004F4A7B /* RunChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunChartView.swift; sourceTree = "<group>"; };
+		A2290BB52C57F8590098CA06 /* PRCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRCalculator.swift; sourceTree = "<group>"; };
+		A24510642C6FC84800E40DB7 /* Trackrun.gpx */ = {isa = PBXFileReference; lastKnownFileType = text; path = Trackrun.gpx; sourceTree = "<group>"; };
+		A24510652C6FCA5100E40DB7 /* trackmarks.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = trackmarks.gpx; sourceTree = "<group>"; };
+		A256F93B2C42CDC000841779 /* RoutePlannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutePlannerView.swift; sourceTree = "<group>"; };
+		A256F93D2C42F1CF00841779 /* RouteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteModel.swift; sourceTree = "<group>"; };
+		A266A0392C334FC100A1E93D /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		A268571F2C09528300A3CD72 /* WeatherStuff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherStuff.swift; sourceTree = "<group>"; };
+		A26857212C09577600A3CD72 /* ABRA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ABRA.entitlements; sourceTree = "<group>"; };
 		A2A4AD442C03C8450072187F /* ABRA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ABRA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2A4AD472C03C8450072187F /* ABRAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABRAApp.swift; sourceTree = "<group>"; };
-		A2A4AD492C03C8450072187F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A2A4AD492C03C8450072187F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		A2A4AD4B2C03C84A0072187F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2A4AD4E2C03C84A0072187F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A2A4AD552C03C9180072187F /* RunCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunCoordinator.swift; sourceTree = "<group>"; };
+		A2B613EE2D1B57AF009386C8 /* ABRADebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ABRADebug.entitlements; sourceTree = "<group>"; };
+		A2B613F12D21BD85009386C8 /* WorkoutModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutModel.swift; sourceTree = "<group>"; };
+		A2BD5FD12C76178A00E8D910 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		A2BD5FD32C76178A00E8D910 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		A2BD5FED2C7688E600E8D910 /* ABRALiveActivityExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ABRALiveActivityExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2D9F5F42C03D07A0060B58E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A2D9F5F72C051E960060B58E /* RunModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunModel.swift; sourceTree = "<group>"; };
+		A2DE8E2E2C34E01700A03369 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		A2EE42F32C054C9F00C425A0 /* RunListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunListView.swift; sourceTree = "<group>"; };
+		A2EE42F52C054CAD00C425A0 /* StartRunView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartRunView.swift; sourceTree = "<group>"; };
+		A2EE42F72C0556E100C425A0 /* RunningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningView.swift; sourceTree = "<group>"; };
+		A2F058752C06C32300B791BC /* HelveticaNeueBlack.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HelveticaNeueBlack.otf; sourceTree = "<group>"; };
+		A2F4130F2C29EDEE00AB9DC7 /* CommunicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationCoordinator.swift; sourceTree = "<group>"; };
+		A2FDB0CF2C6E835E005EC055 /* TrackPlanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackPlanner.swift; sourceTree = "<group>"; };
+		A2FE3FD62C4EC4DE00A22393 /* MusicCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A2BD5FFD2C7688EA00E8D910 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A2BD5FEC2C7688E600E8D910 /* ABRALiveActivityExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		A2BD5FF02C7688E600E8D910 /* ABRALiveActivity */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (A2BD5FFD2C7688EA00E8D910 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = ABRALiveActivity; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A2A4AD412C03C8450072187F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A27D12452C25CCD6007F19F6 /* BottomSheet in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2BD5FEA2C7688E600E8D910 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2BD5FEF2C7688E600E8D910 /* SwiftUI.framework in Frameworks */,
+				A2BD5FEE2C7688E600E8D910 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,7 +139,11 @@
 		A2A4AD3B2C03C8450072187F = {
 			isa = PBXGroup;
 			children = (
+				A24510652C6FCA5100E40DB7 /* trackmarks.gpx */,
+				A24510642C6FC84800E40DB7 /* Trackrun.gpx */,
 				A2A4AD462C03C8450072187F /* ABRA */,
+				A2BD5FF02C7688E600E8D910 /* ABRALiveActivity */,
+				A2BD5FD02C76178A00E8D910 /* Frameworks */,
 				A2A4AD452C03C8450072187F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				A2A4AD442C03C8450072187F /* ABRA.app */,
+				A2BD5FED2C7688E600E8D910 /* ABRALiveActivityExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,9 +160,23 @@
 		A2A4AD462C03C8450072187F /* ABRA */ = {
 			isa = PBXGroup;
 			children = (
-				A2A4AD472C03C8450072187F /* ABRAApp.swift */,
-				A2A4AD492C03C8450072187F /* ContentView.swift */,
+				A2B613EE2D1B57AF009386C8 /* ABRADebug.entitlements */,
+				A26857212C09577600A3CD72 /* ABRA.entitlements */,
+				A2F058752C06C32300B791BC /* HelveticaNeueBlack.otf */,
+				A2D9F5F42C03D07A0060B58E /* Info.plist */,
 				A2A4AD4B2C03C84A0072187F /* Assets.xcassets */,
+				A2EE42FA2C0556F800C425A0 /* Views */,
+				A2A4AD472C03C8450072187F /* ABRAApp.swift */,
+				A2F4130F2C29EDEE00AB9DC7 /* CommunicationCoordinator.swift */,
+				A21E912C2C3830FB004F4A7B /* GroupCoordinator.swift */,
+				A2FE3FD62C4EC4DE00A22393 /* MusicCoordinator.swift */,
+				A2DE8E2E2C34E01700A03369 /* KeychainManager.swift */,
+				A2A4AD552C03C9180072187F /* RunCoordinator.swift */,
+				A2D9F5F72C051E960060B58E /* RunModel.swift */,
+				A2290BB52C57F8590098CA06 /* PRCalculator.swift */,
+				A256F93D2C42F1CF00841779 /* RouteModel.swift */,
+				A2B613F12D21BD85009386C8 /* WorkoutModel.swift */,
+				A268571F2C09528300A3CD72 /* WeatherStuff.swift */,
 				A2A4AD4D2C03C84A0072187F /* Preview Content */,
 			);
 			path = ABRA;
@@ -67,6 +190,34 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		A2BD5FD02C76178A00E8D910 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2BD5FD12C76178A00E8D910 /* WidgetKit.framework */,
+				A2BD5FD32C76178A00E8D910 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2EE42FA2C0556F800C425A0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A2A4AD492C03C8450072187F /* MainView.swift */,
+				A256F93B2C42CDC000841779 /* RoutePlannerView.swift */,
+				A2FDB0CF2C6E835E005EC055 /* TrackPlanner.swift */,
+				A21E912E2C38BEFA004F4A7B /* GroupListView.swift */,
+				A21E91302C38BF10004F4A7B /* GroupView.swift */,
+				A21E91322C396B94004F4A7B /* RunChartView.swift */,
+				A266A0392C334FC100A1E93D /* SignInView.swift */,
+				A20716AD2C23605C008E261C /* MiniViews.swift */,
+				A2EE42F52C054CAD00C425A0 /* StartRunView.swift */,
+				A2EE42F72C0556E100C425A0 /* RunningView.swift */,
+				A2EE42F32C054C9F00C425A0 /* RunListView.swift */,
+				A211EA792C055DAC002FF2C6 /* PreviousRunView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +228,42 @@
 				A2A4AD402C03C8450072187F /* Sources */,
 				A2A4AD412C03C8450072187F /* Frameworks */,
 				A2A4AD422C03C8450072187F /* Resources */,
+				A2BD5FE82C76179200E8D910 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A2BD5FFB2C7688EA00E8D910 /* PBXTargetDependency */,
+			);
+			name = ABRA;
+			packageProductDependencies = (
+				A27D12442C25CCD6007F19F6 /* BottomSheet */,
+			);
+			productName = ABRA;
+			productReference = A2A4AD442C03C8450072187F /* ABRA.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A2BD5FEC2C7688E600E8D910 /* ABRALiveActivityExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2BD5FFE2C7688EA00E8D910 /* Build configuration list for PBXNativeTarget "ABRALiveActivityExtension" */;
+			buildPhases = (
+				A2BD5FE92C7688E600E8D910 /* Sources */,
+				A2BD5FEA2C7688E600E8D910 /* Frameworks */,
+				A2BD5FEB2C7688E600E8D910 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ABRA;
-			productName = ABRA;
-			productReference = A2A4AD442C03C8450072187F /* ABRA.app */;
-			productType = "com.apple.product-type.application";
+			fileSystemSynchronizedGroups = (
+				A2BD5FF02C7688E600E8D910 /* ABRALiveActivity */,
+			);
+			name = ABRALiveActivityExtension;
+			packageProductDependencies = (
+			);
+			productName = ABRALiveActivityExtension;
+			productReference = A2BD5FED2C7688E600E8D910 /* ABRALiveActivityExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -94,11 +272,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1520;
+				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					A2A4AD432C03C8450072187F = {
 						CreatedOnToolsVersion = 15.2;
+					};
+					A2BD5FEC2C7688E600E8D910 = {
+						CreatedOnToolsVersion = 16.0;
 					};
 				};
 			};
@@ -111,11 +292,15 @@
 				Base,
 			);
 			mainGroup = A2A4AD3B2C03C8450072187F;
+			packageReferences = (
+				A27D12432C25CCD6007F19F6 /* XCRemoteSwiftPackageReference "BottomSheet" */,
+			);
 			productRefGroup = A2A4AD452C03C8450072187F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				A2A4AD432C03C8450072187F /* ABRA */,
+				A2BD5FEC2C7688E600E8D910 /* ABRALiveActivityExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -125,8 +310,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2F058762C06C32300B791BC /* HelveticaNeueBlack.otf in Resources */,
 				A2A4AD4F2C03C84A0072187F /* Preview Assets.xcassets in Resources */,
 				A2A4AD4C2C03C84A0072187F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2BD5FEB2C7688E600E8D910 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,12 +330,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2A4AD4A2C03C8450072187F /* ContentView.swift in Sources */,
+				A2FDB0D02C6E835E005EC055 /* TrackPlanner.swift in Sources */,
+				A21E912F2C38BEFA004F4A7B /* GroupListView.swift in Sources */,
+				A21E91312C38BF10004F4A7B /* GroupView.swift in Sources */,
+				A2290BB62C57F85A0098CA06 /* PRCalculator.swift in Sources */,
+				A2EE42F62C054CAD00C425A0 /* StartRunView.swift in Sources */,
+				A2A4AD4A2C03C8450072187F /* MainView.swift in Sources */,
+				A2DE8E2F2C34E01700A03369 /* KeychainManager.swift in Sources */,
+				A2A4AD562C03C9180072187F /* RunCoordinator.swift in Sources */,
 				A2A4AD482C03C8450072187F /* ABRAApp.swift in Sources */,
+				A2EE42F42C054C9F00C425A0 /* RunListView.swift in Sources */,
+				A211EA7A2C055DAC002FF2C6 /* PreviousRunView.swift in Sources */,
+				A266A03A2C334FC100A1E93D /* SignInView.swift in Sources */,
+				A2FE3FD72C4EC4DE00A22393 /* MusicCoordinator.swift in Sources */,
+				A21E912D2C3830FB004F4A7B /* GroupCoordinator.swift in Sources */,
+				A256F93C2C42CDC000841779 /* RoutePlannerView.swift in Sources */,
+				A2B613F22D21BD86009386C8 /* WorkoutModel.swift in Sources */,
+				A26857202C09528300A3CD72 /* WeatherStuff.swift in Sources */,
+				A2F413102C29EDEE00AB9DC7 /* CommunicationCoordinator.swift in Sources */,
+				A256F93E2C42F1CF00841779 /* RouteModel.swift in Sources */,
+				A21E91332C396B95004F4A7B /* RunChartView.swift in Sources */,
+				A2EE42F82C0556E100C425A0 /* RunningView.swift in Sources */,
+				A2D9F5F82C051E960060B58E /* RunModel.swift in Sources */,
+				A20716AE2C23605C008E261C /* MiniViews.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2BD5FE92C7688E600E8D910 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A2BD5FFB2C7688EA00E8D910 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2BD5FEC2C7688E600E8D910 /* ABRALiveActivityExtension */;
+			targetProxy = A2BD5FFA2C7688EA00E8D910 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A2A4AD502C03C84A0072187F /* Debug */ = {
@@ -183,6 +412,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				EXCLUDED_ARCHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -246,6 +476,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				EXCLUDED_ARCHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -269,26 +500,39 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ABRA/ABRADebug.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ABRA/Preview Content\"";
+				DEVELOPMENT_TEAM = BAXHH9RS5H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ABRA/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "ABRA allows you to control your music while running";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "ABRA needs your location in order to actively track your runs";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.oli.ABRA;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oli.abra;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -297,23 +541,94 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ABRA/ABRA.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ABRA/Preview Content\"";
+				DEVELOPMENT_TEAM = BAXHH9RS5H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ABRA/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "ABRA allows you to control your music while running";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "ABRA needs your location in order to actively track your runs";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.oli.ABRA;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oli.abra;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A2BD5FFF2C7688EA00E8D910 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BAXHH9RS5H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ABRALiveActivity/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ABRALiveActivity;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oli.abra.ABRALiveActivity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A2BD60002C7688EA00E8D910 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BAXHH9RS5H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ABRALiveActivity/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ABRALiveActivity;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oli.abra.ABRALiveActivity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -341,7 +656,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		A2BD5FFE2C7688EA00E8D910 /* Build configuration list for PBXNativeTarget "ABRALiveActivityExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2BD5FFF2C7688EA00E8D910 /* Debug */,
+				A2BD60002C7688EA00E8D910 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A27D12432C25CCD6007F19F6 /* XCRemoteSwiftPackageReference "BottomSheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lucaszischka/BottomSheet";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A27D12442C25CCD6007F19F6 /* BottomSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A27D12432C25CCD6007F19F6 /* XCRemoteSwiftPackageReference "BottomSheet" */;
+			productName = BottomSheet;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A2A4AD3C2C03C8450072187F /* Project object */;
 }
